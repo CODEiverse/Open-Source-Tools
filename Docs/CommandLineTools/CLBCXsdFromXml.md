@@ -3,6 +3,6 @@
           
 Executable Name: CLBCXsdFromXml.exe.
 
-[Back](../../blob/master/README.md)
+[Back](../../README.md)
         
         
