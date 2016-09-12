@@ -11,7 +11,7 @@
     <FileSet>
       <FileSetFiles>
         <FileSetFile>
-          <RelativePath>../../Readme.md</RelativePath>
+          <RelativePath>../../README.md</RelativePath>
           <OverwriteMode>Always</OverwriteMode>
           <FileContents>
 # CODEiverse Open Source Tools
@@ -39,7 +39,7 @@ There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  Th
           
 Executable Name: <xsl:value-of select="ExeName"/>.
 
-<a><xsl:attribute name="href">/codee42/CODEiverse-OST/README.md</xsl:attribute>Back</a>
+<a><xsl:attribute name="href">/codee42/CODEiverse-OST/blob/master/README.md</xsl:attribute>Back</a>
         
         </FileContents>
         </FileSetFile>
