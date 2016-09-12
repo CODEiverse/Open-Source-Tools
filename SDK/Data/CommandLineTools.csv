@@ -1,9 +1,9 @@
 CommandLineToolId,Name,Description,Version,Namespace,ExeName
-abebe960-5fbb-4d57-aee4-c7281d6f8f20,UriToFile,Download the specified Uri and output the file. ,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCUriToFile.exe
-eda851fe-dbe3-46b3-9bd2-830a1e5097f0,CsvToXml,Convert a CSV into an Xml file,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCCsvToXml.exe
+abebe960-5fbb-4d57-aee4-c7281d6f8f20,UriToFile,Download the specified Uri and output the file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCUriToFile.exe
+eda851fe-dbe3-46b3-9bd2-830a1e5097f0,CsvToXml,Convert a CSV into an Xml file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCCsvToXml.exe
 32486b3f-4ba8-442f-8748-7c8fb2b69eb4,XmlToJson,Convert an Xml file into a Json file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCXmlToJson.exe
 84f32c1a-44cb-407b-a50a-87cc9fdfc439,JsonToXml,Convert a Json file to an Xml file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCJsonToXml.exe
 6bdd8f02-ec35-4249-83c6-36996be2bb9d,XsdFromXml,Derive an Xsd from an Xml file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCXsdFromXml.exe
 3fe4aec1-199d-4017-817e-cc37b1487916,XsltProc,Process an Xml file given the specified Xslt file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCXsltProc.exe
 73196e5c-7506-4424-93dc-8f01450fea45,FileSetToFiles,Extract the files (and their contents) from an Xml File Set.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCFileSetToFiles.exe
-8be12d5d-66cb-4ecf-bd83-8d54ab9ed136,MSSQLDbToXml,Extract an entire Database into a single XML file,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCMSSQLDbToXml.exe
+8be12d5d-66cb-4ecf-bd83-8d54ab9ed136,MSSQLDbToXml,Extract an entire Database into a single XML file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCMSSQLDbToXml.exe

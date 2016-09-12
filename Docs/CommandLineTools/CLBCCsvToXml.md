@@ -2,7 +2,7 @@
 # CLBCCsvToXml
 
 Description:
-Convert a CSV into an Xml file
+Convert a CSV into an Xml file.
           
 Executable Name: CLBCCsvToXml.exe.
 

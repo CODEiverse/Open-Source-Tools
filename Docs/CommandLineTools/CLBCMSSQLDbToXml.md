@@ -2,7 +2,7 @@
 # CLBCMSSQLDbToXml
 
 Description:
-Extract an entire Database into a single XML file
+Extract an entire Database into a single XML file.
           
 Executable Name: CLBCMSSQLDbToXml.exe.
 

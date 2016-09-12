@@ -10,7 +10,7 @@
   <CommandLineTool>
     <CommandLineToolId>eda851fe-dbe3-46b3-9bd2-830a1e5097f0</CommandLineToolId>
     <Name>CsvToXml</Name>
-    <Description>Convert a CSV into an Xml file</Description>
+    <Description>Convert a CSV into an Xml file.</Description>
     <Version>v16.9.11</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCCsvToXml.exe</ExeName>
@@ -58,7 +58,7 @@
   <CommandLineTool>
     <CommandLineToolId>8be12d5d-66cb-4ecf-bd83-8d54ab9ed136</CommandLineToolId>
     <Name>MSSQLDbToXml</Name>
-    <Description>Extract an entire Database into a single XML file</Description>
+    <Description>Extract an entire Database into a single XML file.</Description>
     <Version>v16.9.11</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCMSSQLDbToXml.exe</ExeName>

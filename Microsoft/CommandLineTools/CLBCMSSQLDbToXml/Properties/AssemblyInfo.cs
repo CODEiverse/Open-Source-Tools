@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CLBCMSSQLDbToXml")]
-[assembly: AssemblyDescription("Extract an entire Database into a single XML file")]
+[assembly: AssemblyDescription("Extract an entire Database into a single XML file.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CODEiverse.com")]
 [assembly: AssemblyProduct("CLBCMSSQLDbToXml")]
