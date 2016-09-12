@@ -35,6 +35,7 @@ There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  Th
         <FileContents>
 # CLBC<xsl:value-of select="Name"/>
 
+Description:
 <xsl:value-of select="Description" />
           
 Executable Name: <xsl:value-of select="ExeName"/>.

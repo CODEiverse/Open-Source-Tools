@@ -1,5 +1,8 @@
 
-# CLBCXmlToJsonConvert an Xml file into a Json file.
+# CLBCXmlToJson
+
+Description:
+Convert an Xml file into a Json file.
           
 Executable Name: CLBCXmlToJson.exe.
 

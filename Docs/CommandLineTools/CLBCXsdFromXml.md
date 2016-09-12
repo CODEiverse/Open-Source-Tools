@@ -1,5 +1,8 @@
 
-# CLBCXsdFromXmlDerive an Xsd from an Xml file.
+# CLBCXsdFromXml
+
+Description:
+Derive an Xsd from an Xml file.
           
 Executable Name: CLBCXsdFromXml.exe.
 
