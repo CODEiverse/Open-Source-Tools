@@ -21,13 +21,28 @@ that CODEiverse provides.
 
 There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  They are.          
   <xsl:for-each select="//CommandLineTool">&#32;
-&#32;&#32;<xsl:value-of select="position()"/>. **<xsl:value-of select="Name"/>**
+&#32;&#32;<xsl:value-of select="position()"/>. **<a>
+  <xsl:attribute name="href">Docs\CommandLineTools\CLBC<xsl:value-of select="Name"/>.md</xsl:attribute><xsl:value-of select="Name"/></a>**
 &#32;&#32;&#32;&#32;&#32;<xsl:value-of select="Description"/>.
 &#32;
   </xsl:for-each>
 
           </FileContents>
         </FileSetFile>
+      <xsl:for-each select="//CommandLineTool">
+        <FileSetFile>
+          <RelativePath>..\..\Docs\CommandLineTools\CLBC<xsl:value-of select="Name"/>.md</RelativePath>
+        <FileContents>
+# CLBC<xsl:value-of select="Name"/>
+
+<xsl:value-of select="Description" />
+          
+Executable Name: <xsl:value-of select="ExeName"/>.
+        
+        </FileContents>
+        </FileSetFile>
+      
+      </xsl:for-each>
       </FileSetFiles>
     </FileSet>
   </xsl:template>
