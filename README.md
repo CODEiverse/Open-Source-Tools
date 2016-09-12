@@ -4,7 +4,7 @@
 This is the Open Source Toolset that demonstrate the functionality
 that CODEiverse provides.
 
-There are currently 7 tools.  They are.          
+There are currently 8 tools.  They are.          
   1. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCUriToFile.md">UriToFile</a>**
      Download the specified Uri and output the file..
  
@@ -25,5 +25,8 @@ There are currently 7 tools.  They are.
  
   7. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCFileSetToFiles.md">FileSetToFiles</a>**
      Extract the files (and their contents) from an Xml File Set..
+ 
+  8. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCMSSQLDbToXml.md">MSSQLDbToXml</a>**
+     Extract an entire Database into a single XML file.
  
   

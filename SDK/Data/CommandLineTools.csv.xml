@@ -55,4 +55,12 @@
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCFileSetToFiles.exe</ExeName>
   </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>8be12d5d-66cb-4ecf-bd83-8d54ab9ed136</CommandLineToolId>
+    <Name>MSSQLDbToXml</Name>
+    <Description>Extract an entire Database into a single XML file</Description>
+    <Version>v16.9.11</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCMSSQLDbToXml.exe</ExeName>
+  </CommandLineTool>
 </CommandLineTools>

@@ -6,3 +6,4 @@ eda851fe-dbe3-46b3-9bd2-830a1e5097f0,CsvToXml,Convert a CSV into an Xml file,v16
 6bdd8f02-ec35-4249-83c6-36996be2bb9d,XsdFromXml,Derive an Xsd from an Xml file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCXsdFromXml.exe
 3fe4aec1-199d-4017-817e-cc37b1487916,XsltProc,Process an Xml file given the specified Xslt file.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCXsltProc.exe
 73196e5c-7506-4424-93dc-8f01450fea45,FileSetToFiles,Extract the files (and their contents) from an Xml File Set.,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCFileSetToFiles.exe
+8be12d5d-66cb-4ecf-bd83-8d54ab9ed136,MSSQLDbToXml,Extract an entire Database into a single XML file,v16.9.11,CODEiverse.OST.CommandLineTools,CLBCMSSQLDbToXml.exe
