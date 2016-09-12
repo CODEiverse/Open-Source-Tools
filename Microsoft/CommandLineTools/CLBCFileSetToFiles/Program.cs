@@ -27,7 +27,7 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
-            Thread.Sleep(15000);
+            //Thread.Sleep(15000);
             String fileName = args.GetFirst<String>();
             FileInfo fi = new FileInfo(fileName);
             String fileSetXml = String.Empty;

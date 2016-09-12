@@ -11,7 +11,7 @@
     <FileSet>
       <FileSetFiles>
         <FileSetFile>
-          <RelativePath>Readme.md</RelativePath>
+          <RelativePath>../../Readme.md</RelativePath>
           <OverwriteMode>Always</OverwriteMode>
           <FileContents>
 # CODEiverse Open Source Tools
