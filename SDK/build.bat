@@ -14,3 +14,5 @@ CD "3. Create Readme"
 
 MSXSL ..\Data\CommandLineTools.csv.xml "3. Create Readme.xslt" > fileset.xml
 CLBCFileSetToFiles fileSet.xml
+
+CD ..

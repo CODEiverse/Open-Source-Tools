@@ -20,8 +20,10 @@ This is the Open Source Toolset that demonstrate the functionality
 that CODEiverse provides.
 
 There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  They are.          
-  <xsl:for-each select="//CommandLineTool">
-  - <xsl:value-of select="Name"/>
+  <xsl:for-each select="//CommandLineTool">&#32;
+&#32;&#32;<xsl:value-of select="position()"/>. **<xsl:value-of select="Name"/>**
+&#32;&#32;&#32;&#32;&#32;<xsl:value-of select="Description"/>.
+&#32;
   </xsl:for-each>
 
           </FileContents>
