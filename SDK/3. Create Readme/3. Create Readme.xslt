@@ -39,7 +39,7 @@ There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  Th
           
 Executable Name: <xsl:value-of select="ExeName"/>.
 
-[Back](/codee42/CODEiverse-OST/README.md)
+<a><xsl:attribute name="href">/codee42/CODEiverse-OST/README.md</xsl:attribute>Back</a>
         
         </FileContents>
         </FileSetFile>
