@@ -20,12 +20,12 @@ This is the Open Source Toolset that demonstrate the functionality
 that CODEiverse provides.
 
 There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  They are.          
-  <xsl:for-each select="//CommandLineTool">&#32;
+<xsl:for-each select="//CommandLineTool">&#32;
 &#32;&#32;<xsl:value-of select="position()"/>. **<a>
   <xsl:attribute name="href">/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBC<xsl:value-of select="Name"/>.md</xsl:attribute><xsl:value-of select="Name"/></a>**
 &#32;&#32;&#32;&#32;&#32;<xsl:value-of select="Description"/>.
 &#32;
-    </xsl:for-each>
+</xsl:for-each>
 
 The current MSI Installer ([v2016-09-11](https://github.com/codee42/CODEiverse-OST/raw/master/Setup/Debug/CODEiverse_OST_20160911.msi)) can be downloaded to 
 them to run locally.
