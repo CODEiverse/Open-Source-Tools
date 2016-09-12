@@ -35,3 +35,6 @@ Microsoft/*/*/*/packages
 Microsoft/*/*/*/publish
 /Microsoft/Agnostic/Exslt/.svn
 /Microsoft/CommandLineTools/binaries/Debug/CLBCUriToFile.vshost.exe.config
+Microsoft/CommandLineTools/binaries/Debug/CLBCUriToFile.vshost.exe
+Microsoft/CommandLineTools/binaries/Debug/CLBCUriToFile.vshost.exe.config
+/Microsoft/CommandLineTools/binaries/Debug/CLBCUriToFile.vshost.exe.manifest
