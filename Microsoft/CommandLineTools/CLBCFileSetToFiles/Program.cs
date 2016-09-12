@@ -21,36 +21,23 @@ namespace CODEiverse.OST.CommandLineTools
 {
 
     /// <summary>
-    /// Description of the tool here
+    /// Splits the file passed (or piped in) into the files specified by the relative path.
     /// </summary>
     class Program : CLBCBaseProgram
     {
         static void Main(string[] args)
         {
-            //Thread.Sleep(15000);
+            Thread.Sleep(15000);
             String fileName = args.GetFirst<String>();
+            FileInfo fi = new FileInfo(fileName);
             String fileSetXml = String.Empty;
             String directory = Environment.CurrentDirectory;
-            if (String.IsNullOrEmpty(fileName))
-            {
-                bool isKeyAvailable;
-
-                try
-                {
-                    isKeyAvailable = System.Console.KeyAvailable;
-                }
-                catch (InvalidOperationException expected)
-                {
-                    fileSetXml = System.Console.In.ReadToEnd();
-                }
-            }
+            if (String.IsNullOrEmpty(fileName)) PrintSyntax("FileSet.xml");
             else
             {
-                directory = Path.GetDirectoryName(fileName);
+                directory = fi.Directory.FullName;
                 fileSetXml = File.ReadAllText(fileName);
             }
-
-            Console.Error.WriteLine(directory);
 
             SplitContents(fileSetXml, false, directory);
         }

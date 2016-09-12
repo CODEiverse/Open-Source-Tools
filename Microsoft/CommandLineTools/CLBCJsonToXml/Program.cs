@@ -19,7 +19,7 @@ namespace CODEiverse.OST.CommandLineTools
 {
 
     /// <summary>
-    /// Description of the tool here
+    /// Convert a Json file to an Xml file.
     /// </summary>
     class Program : CLBCBaseProgram
     {

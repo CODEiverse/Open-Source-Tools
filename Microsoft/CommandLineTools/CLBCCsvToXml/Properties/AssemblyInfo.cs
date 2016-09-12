@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CODEiverse.com")]
 [assembly: AssemblyProduct("CLBCCsvToXml")]
-[assembly: AssemblyCopyright("Copyright c CODEiverse.com, EJ Alexandra 2016")]
+[assembly: AssemblyCopyright("Copyright © CODEiverse.com, EJ Alexandra 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

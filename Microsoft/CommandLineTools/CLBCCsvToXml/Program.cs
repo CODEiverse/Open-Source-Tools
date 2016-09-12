@@ -24,7 +24,7 @@ namespace CODEiverse.OST.CommandLineTools
 {
 
     /// <summary>
-    /// Description of the tool here
+    /// Convert the Csv file into an Xml file
     /// </summary>
     class Program : CLBCBaseProgram
     {

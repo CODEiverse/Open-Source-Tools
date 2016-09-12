@@ -105,7 +105,7 @@ namespace CODEiverse.OST.CommandLineTools
 {
 
     /// &lt;summary>
-    /// Description of the tool here
+    /// <xsl:value-of select="Description"/>
     /// &lt;/summary>
     class Program : CLBCBaseProgram
     {

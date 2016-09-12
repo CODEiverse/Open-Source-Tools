@@ -19,7 +19,7 @@ namespace CODEiverse.OST.CommandLineTools
 {
 
     /// <summary>
-    /// Description of the tool here
+    /// Derive an Xsd from an Xml file.
     /// </summary>
     class Program : CLBCBaseProgram
     {
