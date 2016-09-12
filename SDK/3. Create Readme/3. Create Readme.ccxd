@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<XsltDish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DishId>626fae82-1ea0-4bc8-933a-88f8aabb5bb0</DishId>
+  <Name>3. Create Readme.ccxd</Name>
+  <FileName>C:\Development\CODEiverse.OST\SDK\3. Create Readme\3. Create Readme.ccxd</FileName>
+  <SkipClean>false</SkipClean>
+  <PreviousFileSetZipped>H4sIAAAAAAAEAG1RwWrDMAy9B/IPojsv6bbDoHSB0a2HsdLSZtCrSbTF4FjFVpPm23bYJ+0XZsdtacqMjfWeniVZ+v3+mc6lwg0yHGql7eRgn0YV826Spm3bJu1DQuYrvR+P79Lt4n1TVFiLURZHAKeH/rI9M+SOlCPXqATLBleCq2yNoqwxqctpOuDP6mWDpjWScUElZs+qFZ2dpkP2LPaJZqQZNfsabmC2fHl1IY1FWO5Qw4b2pkDIiZSNozjKK2nBba7+EbgucCUYSqxJWzaCsRd+7nXBkrRQkrs46jUXiXaGGlmiTUICNAjCnWJvjKtLdfAI7MMnAM7beWdy+kFYHvlzCx9G5uR/FeDMNjltaxWQM3J6s6QD9Nal15ZzQ/UFVrwyVAR0nEwI7hp61bm+m+n1+AaMl52J7A/RlozTOwIAAA==</PreviousFileSetZipped>
+  <SqlDishs />
+  <XsltDishs />
+  <CascadingDishs />
+  <IsDebug>false</IsDebug>
+  <SaveFileSet>false</SaveFileSet>
+  <CascadingDishList />
+  <MealPlan />
+  <RelativeMealPlan />
+  <XsltRelativeFileName>3. Create Readme.xslt</XsltRelativeFileName>
+  <XmlRelativeFileName>..\Data\CommandLineTools.csv.xml</XmlRelativeFileName>
+</XsltDish>
