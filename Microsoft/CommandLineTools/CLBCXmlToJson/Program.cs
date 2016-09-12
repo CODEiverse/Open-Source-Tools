@@ -1,4 +1,4 @@
-﻿/*****************************
+/*****************************
 Project:    CODEiverse - Open Source Tools (OST)
             Command Line Based Codee (CLBC)
             http://www.CODEiverse.com
@@ -15,24 +15,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 
-namespace CODEiverse.OST.CommandLineTools.CLBCUriToFile
+namespace CODEiverse.OST.CommandLineTools
 {
 
     /// <summary>
-    /// Convert a Uri on the command line into a file which is written to standard out
+    /// Description of the tool here
     /// </summary>
     class Program : CLBCBaseProgram
     {
         static void Main(string[] args)
         {
-            var uri = args.Get<Uri>();
-            if (!ReferenceEquals(uri, null))
-            {
-                WebClient wc = new WebClient();
-                Console.WriteLine(wc.DownloadString(uri));
-            }
-            else PrintSyntax("Uri");
-
         }
     }
 }

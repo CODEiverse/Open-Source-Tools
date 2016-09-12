@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CLBCUriToFile")]
-[assembly: AssemblyDescription("Download the specified Uri and output the file.")]
+[assembly: AssemblyTitle("CLBCFileSetToFiles")]
+[assembly: AssemblyDescription("Extract the files (and their contents) from an Xml File Set.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CODEiverse.com")]
-[assembly: AssemblyProduct("CLBCUriToFile")]
+[assembly: AssemblyProduct("CLBCFileSetToFiles")]
 [assembly: AssemblyCopyright("Copyright c CODEiverse.com, EJ Alexandra 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("abebe960-5fbb-4d57-aee4-c7281d6f8f20")]
+[assembly: Guid("73196e5c-7506-4424-93dc-8f01450fea45")]
 
 // Version information for an assembly consists of the following four values:
 //

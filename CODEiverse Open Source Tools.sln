@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CODEiverse.OST.CommandLineTools.CLBCUriToFile", "Microsoft\CommandLineTools\CLBCUriToFile\CODEiverse.OST.CommandLineTools.CLBCUriToFile.csproj", "{5237EF7B-7445-4911-A639-30F113376366}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{AA0428EF-413D-4C59-AEBC-2D870899DA3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CODEiverse.OST.Lib", "Microsoft\Common\Lib\CODEiverse.OST.Lib.csproj", "{AF51F8DF-6F98-4210-8C79-EF3CACEF0B30}"
@@ -13,26 +11,81 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandLineTools", "Command
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{0996D0AE-BA82-4C1C-9D23-E7523CE4A484}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SDK", "SDK\", "{688EA5F9-65DB-4568-9B61-83B27EE868F4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61727"
+		Debug.AspNetCompiler.PhysicalPath = "SDK\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61727\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61727"
+		Release.AspNetCompiler.PhysicalPath = "SDK\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61727\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61727"
+		SlnRelativePath = "SDK\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLBCCsvToXml", "Microsoft\CommandLineTools\CLBCCsvToXml\CLBCCsvToXml.csproj", "{EDA851FE-DBE3-46B3-9BD2-830A1E5097F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLBCUriToFile", "Microsoft\CommandLineTools\CLBCUriToFile\CLBCUriToFile.csproj", "{ABEBE960-5FBB-4D57-AEE4-C7281D6F8F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLBCXsltProc", "Microsoft\CommandLineTools\CLBCXsltProc\CLBCXsltProc.csproj", "{3FE4AEC1-199D-4017-817E-CC37B1487916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLBCFileSetToFiles", "Microsoft\CommandLineTools\CLBCFileSetToFiles\CLBCFileSetToFiles.csproj", "{73196E5C-7506-4424-93DC-8F01450FEA45}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CODEiverse Open Source Tools", "Setup\CODEiverse Open Source Tools.vdproj", "{40905527-6C4C-4883-88CC-5AC2FFD06AB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5237EF7B-7445-4911-A639-30F113376366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5237EF7B-7445-4911-A639-30F113376366}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5237EF7B-7445-4911-A639-30F113376366}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5237EF7B-7445-4911-A639-30F113376366}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF51F8DF-6F98-4210-8C79-EF3CACEF0B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF51F8DF-6F98-4210-8C79-EF3CACEF0B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF51F8DF-6F98-4210-8C79-EF3CACEF0B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF51F8DF-6F98-4210-8C79-EF3CACEF0B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{688EA5F9-65DB-4568-9B61-83B27EE868F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{688EA5F9-65DB-4568-9B61-83B27EE868F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{688EA5F9-65DB-4568-9B61-83B27EE868F4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{688EA5F9-65DB-4568-9B61-83B27EE868F4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EDA851FE-DBE3-46B3-9BD2-830A1E5097F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA851FE-DBE3-46B3-9BD2-830A1E5097F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA851FE-DBE3-46B3-9BD2-830A1E5097F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA851FE-DBE3-46B3-9BD2-830A1E5097F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEBE960-5FBB-4D57-AEE4-C7281D6F8F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEBE960-5FBB-4D57-AEE4-C7281D6F8F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEBE960-5FBB-4D57-AEE4-C7281D6F8F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEBE960-5FBB-4D57-AEE4-C7281D6F8F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE4AEC1-199D-4017-817E-CC37B1487916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE4AEC1-199D-4017-817E-CC37B1487916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE4AEC1-199D-4017-817E-CC37B1487916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE4AEC1-199D-4017-817E-CC37B1487916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73196E5C-7506-4424-93DC-8F01450FEA45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73196E5C-7506-4424-93DC-8F01450FEA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73196E5C-7506-4424-93DC-8F01450FEA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73196E5C-7506-4424-93DC-8F01450FEA45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40905527-6C4C-4883-88CC-5AC2FFD06AB5}.Debug|Any CPU.ActiveCfg = Debug
+		{40905527-6C4C-4883-88CC-5AC2FFD06AB5}.Debug|Any CPU.Build.0 = Debug
+		{40905527-6C4C-4883-88CC-5AC2FFD06AB5}.Release|Any CPU.ActiveCfg = Release
+		{40905527-6C4C-4883-88CC-5AC2FFD06AB5}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5237EF7B-7445-4911-A639-30F113376366} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
 		{AF51F8DF-6F98-4210-8C79-EF3CACEF0B30} = {AA0428EF-413D-4C59-AEBC-2D870899DA3C}
+		{EDA851FE-DBE3-46B3-9BD2-830A1E5097F0} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
+		{ABEBE960-5FBB-4D57-AEE4-C7281D6F8F20} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
+		{3FE4AEC1-199D-4017-817E-CC37B1487916} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
+		{73196E5C-7506-4424-93DC-8F01450FEA45} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
+		{40905527-6C4C-4883-88CC-5AC2FFD06AB5} = {0996D0AE-BA82-4C1C-9D23-E7523CE4A484}
 	EndGlobalSection
 EndGlobal
