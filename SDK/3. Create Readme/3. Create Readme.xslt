@@ -21,9 +21,9 @@ that CODEiverse provides.
 
 There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  They are.          
 
-<xsl:for-each select="//CommandLineTool">
-&#32;&#32;<xsl:value-of select="position()"/>. **<a><xsl:attribute name="href">/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBC<xsl:value-of select="Name"/>.md</xsl:attribute><xsl:value-of select="Name"/></a>**
-&#32;&#32;&#32;&#32;<xsl:value-of select="Description"/><![CDATA[
+<xsl:for-each select="//CommandLineTool"><![CDATA[
+  ]]><xsl:value-of select="position()"/>. **<a><xsl:attribute name="href">/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBC<xsl:value-of select="Name"/>.md</xsl:attribute><xsl:value-of select="Name"/></a>**<![CDATA[
+      ]]><xsl:value-of select="Description"/><![CDATA[
 ]]>
 </xsl:for-each>
 
