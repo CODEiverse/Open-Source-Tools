@@ -5,25 +5,25 @@ This is the Open Source Toolset that demonstrate the functionality
 that CODEiverse provides.
 
 There are currently 7 tools.  They are.          
-  1. **<a href="../../blob/master/Docs/CommandLineTools/CLBCUriToFile.md">UriToFile</a>**
+  1. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCUriToFile.md">UriToFile</a>**
      Download the specified Uri and output the file..
  
-  2. **<a href="../../blob/master/Docs/CommandLineTools/CLBCCsvToXml.md">CsvToXml</a>**
+  2. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCCsvToXml.md">CsvToXml</a>**
      Convert a CSV into an Xml file.
  
-  3. **<a href="../../blob/master/Docs/CommandLineTools/CLBCXmlToJson.md">XmlToJson</a>**
+  3. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCXmlToJson.md">XmlToJson</a>**
      Convert an Xml file into a Json file..
  
-  4. **<a href="../../blob/master/Docs/CommandLineTools/CLBCJsonToXml.md">JsonToXml</a>**
+  4. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCJsonToXml.md">JsonToXml</a>**
      Convert a Json file to an Xml file..
  
-  5. **<a href="../../blob/master/Docs/CommandLineTools/CLBCXsdFromXml.md">XsdFromXml</a>**
+  5. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCXsdFromXml.md">XsdFromXml</a>**
      Derive an Xsd from an Xml file..
  
-  6. **<a href="../../blob/master/Docs/CommandLineTools/CLBCXsltProc.md">XsltProc</a>**
+  6. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCXsltProc.md">XsltProc</a>**
      Process an Xml file given the specified Xslt file..
  
-  7. **<a href="../../blob/master/Docs/CommandLineTools/CLBCFileSetToFiles.md">FileSetToFiles</a>**
+  7. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCFileSetToFiles.md">FileSetToFiles</a>**
      Extract the files (and their contents) from an Xml File Set..
  
   
