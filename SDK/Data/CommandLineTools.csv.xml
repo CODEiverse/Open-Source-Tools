@@ -63,4 +63,12 @@
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCMSSQLDbToXml.exe</ExeName>
   </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>c7e47013-4710-4b4e-ba55-061d9db3723d</CommandLineToolId>
+    <Name>HtmlToXml</Name>
+    <Description>Interpret html (liberally) to create a valid xhtml document.</Description>
+    <Version>v16.9.11</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCHtmlToXml.exe</ExeName>
+  </CommandLineTool>
 </CommandLineTools>

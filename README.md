@@ -4,7 +4,7 @@
 This is the Open Source Toolset that demonstrate the functionality
 that CODEiverse provides.
 
-There are currently 8 tools.  They are.          
+There are currently 9 tools.  They are.          
 
 
   1. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCUriToFile.md">UriToFile</a>**
@@ -30,6 +30,9 @@ There are currently 8 tools.  They are.
 
   8. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCMSSQLDbToXml.md">MSSQLDbToXml</a>**
       Extract an entire Database into a single XML file.
+
+  9. **<a href="/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBCHtmlToXml.md">HtmlToXml</a>**
+      Interpret html (liberally) to create a valid xhtml document.
 
 
 The current MSI Installer ([v2016-09-11](https://github.com/codee42/CODEiverse-OST/raw/master/Setup/Debug/CODEiverse_OST_20160911.msi)) can be downloaded to 
