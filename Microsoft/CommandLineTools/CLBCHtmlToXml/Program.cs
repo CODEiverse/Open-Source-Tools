@@ -27,8 +27,11 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
+            if (args.Length == 2) Console.WriteLine("v1.1");
             FileInfo inputFileInfo = args.GetFirst<FileInfo>();
-            Console.WriteLine(File.ReadAllText(inputFileInfo.FullName));
+            String html = File.ReadAllText(inputFileInfo.FullName);
+            String xml = html.HtmlToXml();
+            Console.Write(xml);
         }
     }
 }

@@ -4,6 +4,7 @@ Created By: EJ Alexandra - 2016
             An Abstract Level, llc
 License:    Mozilla Public License 2.0
 *****************************/
+using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -20,6 +21,18 @@ namespace CODEiverse.OST.Lib
         {
             if (ReferenceEquals(objectToMakeText, null)) return String.Empty;
             return objectToMakeText.ToString();
+        }
+
+        public static String HtmlToXml(this String htmlText)
+        {
+            HtmlDocument doc = new HtmlDocument();
+            doc.LoadHtml(htmlText);
+            MemoryStream ms = new MemoryStream();
+            doc.OptionOutputAsXml = true;
+            doc.Save(ms);
+            ms.Position = 0;
+            var sr = (new StreamReader(ms));
+            return sr.ReadToEnd();
         }
 
         public static T Get<T>(this string[] args)
