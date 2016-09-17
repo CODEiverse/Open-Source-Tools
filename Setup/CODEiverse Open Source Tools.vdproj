@@ -34,25 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_436DC868F92EDA7F65A04BA4F73F55BD"
-        "OwnerKey" = "8:_2097128F9B2548108F27EEF31709B488"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_436DC868F92EDA7F65A04BA4F73F55BD"
         "OwnerKey" = "8:_0EB93BB1A4F74FD79997E55ED4C7BDBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_436DC868F92EDA7F65A04BA4F73F55BD"
-        "OwnerKey" = "8:_59DE00BA18DE4752AA6E0760D6A6C950"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_436DC868F92EDA7F65A04BA4F73F55BD"
-        "OwnerKey" = "8:_11A4D529FCA94FF8BA66DDEAE317C4CB"
+        "OwnerKey" = "8:_69F74762798942679ADC0BBB4E37682F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -81,6 +69,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_436DC868F92EDA7F65A04BA4F73F55BD"
+        "OwnerKey" = "8:_59DE00BA18DE4752AA6E0760D6A6C950"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_436DC868F92EDA7F65A04BA4F73F55BD"
+        "OwnerKey" = "8:_2097128F9B2548108F27EEF31709B488"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_436DC868F92EDA7F65A04BA4F73F55BD"
+        "OwnerKey" = "8:_11A4D529FCA94FF8BA66DDEAE317C4CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_59DE00BA18DE4752AA6E0760D6A6C950"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -88,6 +94,12 @@
         "Entry"
         {
         "MsmKey" = "8:_64A796DF77E14F4DA77F4F2F865B9C27"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_69F74762798942679ADC0BBB4E37682F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -106,25 +118,13 @@
         "Entry"
         {
         "MsmKey" = "8:_D7C5EBEAC8E8CABF3045DE2C01AE3C84"
-        "OwnerKey" = "8:_2097128F9B2548108F27EEF31709B488"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D7C5EBEAC8E8CABF3045DE2C01AE3C84"
         "OwnerKey" = "8:_0EB93BB1A4F74FD79997E55ED4C7BDBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_D7C5EBEAC8E8CABF3045DE2C01AE3C84"
-        "OwnerKey" = "8:_59DE00BA18DE4752AA6E0760D6A6C950"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D7C5EBEAC8E8CABF3045DE2C01AE3C84"
-        "OwnerKey" = "8:_11A4D529FCA94FF8BA66DDEAE317C4CB"
+        "OwnerKey" = "8:_69F74762798942679ADC0BBB4E37682F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -147,6 +147,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D7C5EBEAC8E8CABF3045DE2C01AE3C84"
+        "OwnerKey" = "8:_59DE00BA18DE4752AA6E0760D6A6C950"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D7C5EBEAC8E8CABF3045DE2C01AE3C84"
+        "OwnerKey" = "8:_2097128F9B2548108F27EEF31709B488"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D7C5EBEAC8E8CABF3045DE2C01AE3C84"
+        "OwnerKey" = "8:_11A4D529FCA94FF8BA66DDEAE317C4CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E2384EC674FB42C199F31A2021A4798F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -160,19 +178,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0EB93BB1A4F74FD79997E55ED4C7BDBF"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_59DE00BA18DE4752AA6E0760D6A6C950"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_11A4D529FCA94FF8BA66DDEAE317C4CB"
+        "OwnerKey" = "8:_69F74762798942679ADC0BBB4E37682F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -196,7 +202,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_59DE00BA18DE4752AA6E0760D6A6C950"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2097128F9B2548108F27EEF31709B488"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_11A4D529FCA94FF8BA66DDEAE317C4CB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0EB93BB1A4F74FD79997E55ED4C7BDBF"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -219,7 +243,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\CODEiverse_OST_20160911.msi"
+        "OutputFilename" = "8:Debug\\CODEiverse_OST_20160917.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -452,15 +476,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:CODEiverse Open Source Tools"
-        "ProductCode" = "8:{3D1ECCCC-479B-442B-A4EB-48C9EF81622F}"
-        "PackageCode" = "8:{E9FAF208-36A6-4260-85F5-20948A872BA1}"
+        "ProductCode" = "8:{80E6AF29-9B28-4DEE-81CD-302DDC459936}"
+        "PackageCode" = "8:{EF9FEE15-338E-424C-8921-328774A7036C}"
         "UpgradeCode" = "8:{9D33CD68-5B22-44E4-B4FA-990BD8AE3ACD}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:16.09.11"
+        "ProductVersion" = "8:16.09.17"
         "Manufacturer" = "8:CODEiverse.com"
         "ARPHELPTELEPHONE" = "8:424-242-5558"
         "ARPHELPLINK" = "8:http://CODEiverse.com"
@@ -1336,6 +1360,34 @@
                 {
                 }
             }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_53FB3D990FEB4948B319D1BD7C829AF1"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_6D6F1442E1424E189F20BEB6FD2E001F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:ContentFiles"
+            "OutputProjectGuid" = "8:{C7E47013-4710-4B4E-BA55-061D9DB3723D}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_59DE00BA18DE4752AA6E0760D6A6C950"
             {
             "SourcePath" = "8:..\\Microsoft\\CommandLineTools\\CLBCXmlToJson\\obj\\Debug\\CLBCXmlToJson.exe"
@@ -1415,6 +1467,62 @@
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{AF51F8DF-6F98-4210-8C79-EF3CACEF0B30}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_69F74762798942679ADC0BBB4E37682F"
+            {
+            "SourcePath" = "8:..\\Microsoft\\CommandLineTools\\CLBCHtmlToXml\\obj\\Debug\\CLBCHtmlToXml.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_6D6F1442E1424E189F20BEB6FD2E001F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{C7E47013-4710-4B4E-BA55-061D9DB3723D}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_6F50522676824D2887B28444BC35D7A3"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_6D6F1442E1424E189F20BEB6FD2E001F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Documentation"
+            "OutputProjectGuid" = "8:{C7E47013-4710-4B4E-BA55-061D9DB3723D}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
@@ -1695,6 +1803,62 @@
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{73196E5C-7506-4424-93DC-8F01450FEA45}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CBC3364727624E56A577CF8331366889"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_6D6F1442E1424E189F20BEB6FD2E001F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{C7E47013-4710-4B4E-BA55-061D9DB3723D}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D340551477DB4E13AE08649C570EA311"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_6D6F1442E1424E189F20BEB6FD2E001F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:RuntimeImplementation"
+            "OutputProjectGuid" = "8:{C7E47013-4710-4B4E-BA55-061D9DB3723D}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {

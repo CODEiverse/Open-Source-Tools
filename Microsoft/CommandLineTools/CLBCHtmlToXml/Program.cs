@@ -14,6 +14,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using System.Diagnostics;
+using System.IO;
 
 namespace CODEiverse.OST.CommandLineTools
 {
@@ -25,6 +27,8 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
+            FileInfo inputFileInfo = args.GetFirst<FileInfo>();
+            Console.WriteLine(File.ReadAllText(inputFileInfo.FullName));
         }
     }
 }

@@ -41,7 +41,11 @@ namespace CODEiverse.OST.Lib
         public static T GetFirst<T>(this String[] args)
             where T : class
         {
-            if (typeof(T) == typeof(String))
+            if (typeof(T) == typeof(FileInfo)) {
+                String fileNameString = args.GetFirst<String>();
+                return new FileInfo(fileNameString) as T;
+            }
+            else if (typeof(T) == typeof(String))
             {
                 if (ReferenceEquals(args, null)) return String.Empty as T;
                 else if (!args.Any()) return String.Empty as T;
