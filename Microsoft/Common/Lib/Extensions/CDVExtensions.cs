@@ -29,10 +29,46 @@ namespace CODEiverse.OST.Lib
             doc.LoadHtml(htmlText);
             MemoryStream ms = new MemoryStream();
             doc.OptionOutputAsXml = true;
+            var anchors = doc.DocumentNode
+                            .SelectNodes("//a");
+
+            if (!ReferenceEquals(anchors, null)) { 
+                anchors.Where(whereNode => !ReferenceEquals(whereNode, null))
+                        .ToList()
+                        .ForEach(feAnchor => feAnchor.CleanSPECDOCLink());
+            }
+
             doc.Save(ms);
             ms.Position = 0;
             var sr = (new StreamReader(ms));
             return sr.ReadToEnd();
+        }
+
+        private static void CleanSPECDOCLink(this HtmlNode node)
+        {
+            if (!ReferenceEquals(node.Attributes, null)) {
+                var href = node.Attributes["href"];
+                if (!ReferenceEquals(href, null))
+                {
+                    if (!String.IsNullOrEmpty(href.Value))
+                    {
+                        if (href.Value.Contains("://specdocs/"))
+                        {
+                            href.Value = href.Value.Substring(href.Value.IndexOf("://specdocs/") + "://specdocs/".Length);
+                            var entityIndex = href.Value.ToLower().IndexOf("/entity/");
+                            if (entityIndex >= 0)
+                            {
+                                var entityName = href.Value.Substring(entityIndex + "/entity/".Length);
+                                var candidates = entityName.Split("/&?".ToCharArray());
+                                var finalName = candidates.FirstOrDefault(fodCandidate => !String.IsNullOrEmpty(fodCandidate.SafeToString().Trim()));
+
+                                href.Value = String.Format("DataModel/Entity_{0}.html", finalName);
+                            }
+                            if (href.Value.Contains(".html&")) href.Value = href.Value.Substring(0, href.Value.IndexOf(".html&") + ".html".Length);
+                        }
+                    }
+                }
+            }
         }
 
         public static T Get<T>(this string[] args)
