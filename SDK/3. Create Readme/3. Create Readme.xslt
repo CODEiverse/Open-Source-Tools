@@ -2,12 +2,12 @@
   <xsl:output method="xml" indent="yes" />
   <xsl:param name="root" />
   <xsl:template match="@*|node()">
-    <copy>
+    <xsl:copy>
       <xsl:apply-templates select="@*|node()" />
-    </copy>
+    </xsl:copy>
   </xsl:template>
 
-  <xsl:template match="/CommandLineTools">
+  <xsl:template match="/">
     <FileSet>
       <FileSetFiles>
         <FileSetFile>
@@ -22,12 +22,12 @@ that CODEiverse provides.
 There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  They are.          
 
 <xsl:for-each select="//CommandLineTool"><![CDATA[
-  ]]><xsl:value-of select="position()"/>. **<a><xsl:attribute name="href">/codee42/CODEiverse-OST/blob/master/Docs/CommandLineTools/CLBC<xsl:value-of select="Name"/>.md</xsl:attribute><xsl:value-of select="Name"/></a>**<![CDATA[
+  ]]><xsl:value-of select="position()"/>. **<a><xsl:attribute name="href">/CODEiverse/Open-Source-Tools/blob/master/Docs/CommandLineTools/CLBC<xsl:value-of select="Name"/>.md</xsl:attribute><xsl:value-of select="Name"/></a>**<![CDATA[
       ]]><xsl:value-of select="Description"/><![CDATA[
 ]]>
 </xsl:for-each>
 
-The current MSI Installer ([v2016-09-11](https://github.com/codee42/CODEiverse-OST/raw/master/Setup/Debug/CODEiverse_OST_20160911.msi)) can be downloaded to 
+The current MSI Installer ([v2016-09-11](https://github.com/CODEiverse/Open-Source-Tools/raw/master/Setup/Debug/CODEiverse_OST_20160911.msi)) can be downloaded to 
 them to run locally.
 
           </FileContents>

@@ -2,12 +2,12 @@
             <xsl:output method="xml" indent="yes" />
             <xsl:param name="root" />
               <xsl:template match="@*|node()">
-                <copy>
+                <xsl:copy>
                   <xsl:apply-templates select="@*|node()" />
-                </copy>
+                </xsl:copy>
             </xsl:template>
 
-           <xsl:template match="/CommandLineTools">
+           <xsl:template match="/">
              <FileSet>
                <FileSetFiles>
                  <xsl:for-each select="//CommandLineTool">
