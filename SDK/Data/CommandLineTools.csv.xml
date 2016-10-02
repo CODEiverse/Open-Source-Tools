@@ -3,72 +3,90 @@
     <CommandLineToolId>abebe960-5fbb-4d57-aee4-c7281d6f8f20</CommandLineToolId>
     <Name>UriToFile</Name>
     <Description>Download the specified Uri and output the file.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCUriToFile.exe</ExeName>
+    <Result>Results are written to Console.Write(...)</Result>
+    <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>eda851fe-dbe3-46b3-9bd2-830a1e5097f0</CommandLineToolId>
     <Name>CsvToXml</Name>
     <Description>Convert a CSV into an Xml file.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCCsvToXml.exe</ExeName>
+    <Result>Results are saved to a file with the same name as input file + .xml</Result>
+    <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>32486b3f-4ba8-442f-8748-7c8fb2b69eb4</CommandLineToolId>
     <Name>XmlToJson</Name>
     <Description>Convert an Xml file into a Json file.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXmlToJson.exe</ExeName>
+    <Result>Results are saved to a file with the same name as input file + .json</Result>
+    <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>84f32c1a-44cb-407b-a50a-87cc9fdfc439</CommandLineToolId>
     <Name>JsonToXml</Name>
     <Description>Convert a Json file to an Xml file.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCJsonToXml.exe</ExeName>
+    <Result>Results are saved to a file with the same name as input file + .xml</Result>
+    <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>6bdd8f02-ec35-4249-83c6-36996be2bb9d</CommandLineToolId>
     <Name>XsdFromXml</Name>
     <Description>Derive an Xsd from an Xml file.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXsdFromXml.exe</ExeName>
+    <Result>Results are saved to a file with the same name as input file + .xsd</Result>
+    <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>3fe4aec1-199d-4017-817e-cc37b1487916</CommandLineToolId>
     <Name>XsltProc</Name>
     <Description>Process an Xml file given the specified Xslt file.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXsltProc.exe</ExeName>
+    <Result>Results are written to Console.Write(...)</Result>
+    <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>73196e5c-7506-4424-93dc-8f01450fea45</CommandLineToolId>
     <Name>FileSetToFiles</Name>
     <Description>Extract the files (and their contents) from an Xml File Set.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCFileSetToFiles.exe</ExeName>
+    <Result>Results are created as multiple files as specified by the &lt;RelativePath&gt;...&lt;/RelativePath&gt; fields of the FileSet.</Result>
+    <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>8be12d5d-66cb-4ecf-bd83-8d54ab9ed136</CommandLineToolId>
     <Name>MSSQLDbToXml</Name>
     <Description>Extract an entire Database into a single XML file.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCMSSQLDbToXml.exe</ExeName>
+    <Result>Results are written to Console.Write(...)</Result>
+    <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>c7e47013-4710-4b4e-ba55-061d9db3723d</CommandLineToolId>
     <Name>HtmlToXml</Name>
     <Description>Interpret html (liberally) to create a valid xhtml document.</Description>
-    <Version>v16.9.11</Version>
+    <Version>v16.10.02</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCHtmlToXml.exe</ExeName>
+    <Result>Results are written to Console.Write(...)</Result>
+    <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
   </CommandLineTool>
 </CommandLineTools>

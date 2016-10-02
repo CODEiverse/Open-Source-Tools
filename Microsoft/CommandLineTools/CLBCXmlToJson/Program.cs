@@ -27,12 +27,20 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
-            if (args.Length == 2) Console.WriteLine("v1.1");
-            FileInfo inputFileInfo = args.GetFirst<FileInfo>();
             XmlDocument doc = new XmlDocument();
-            doc.Load(inputFileInfo.FullName);
-            String json = doc.XmlToJson();
-            Console.Write(json);
+
+
+            if (!args.Any()) Console.Write("Sytnax: CLBCXmlToJson FileName.xml");
+            else
+            {
+                FileInfo fi = args.GetFirst<FileInfo>();
+                if (!fi.Exists) throw new Exception(String.Format("File {0} does not exist.", fi.FullName));
+                doc.Load(fi.FullName);
+                String json = doc.XmlToJson();
+                String jsonFileName = String.Format("{0}.json", fi.FullName);
+                File.WriteAllText(jsonFileName, json);
+                Console.WriteLine("File generated.");
+            }
         }
     }
 }
