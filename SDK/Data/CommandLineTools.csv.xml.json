@@ -1,0 +1,96 @@
+{
+  "CommandLineTools": {
+    "CommandLineTool": [
+      {
+        "CommandLineToolId": "abebe960-5fbb-4d57-aee4-c7281d6f8f20",
+        "Name": "UriToFile",
+        "Description": "Download the specified Uri and output the file.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCUriToFile.exe",
+        "Result": "Results are written to Console.Write(...)",
+        "RedirectToFileNeeded": "TRUE"
+      },
+      {
+        "CommandLineToolId": "eda851fe-dbe3-46b3-9bd2-830a1e5097f0",
+        "Name": "CsvToXml",
+        "Description": "Convert a CSV into an Xml file.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCCsvToXml.exe",
+        "Result": "Results are saved to a file with the same name as input file + .xml",
+        "RedirectToFileNeeded": "FALSE"
+      },
+      {
+        "CommandLineToolId": "32486b3f-4ba8-442f-8748-7c8fb2b69eb4",
+        "Name": "XmlToJson",
+        "Description": "Convert an Xml file into a Json file.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCXmlToJson.exe",
+        "Result": "Results are saved to a file with the same name as input file + .json",
+        "RedirectToFileNeeded": "FALSE"
+      },
+      {
+        "CommandLineToolId": "84f32c1a-44cb-407b-a50a-87cc9fdfc439",
+        "Name": "JsonToXml",
+        "Description": "Convert a Json file to an Xml file.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCJsonToXml.exe",
+        "Result": "Results are saved to a file with the same name as input file + .xml",
+        "RedirectToFileNeeded": "FALSE"
+      },
+      {
+        "CommandLineToolId": "6bdd8f02-ec35-4249-83c6-36996be2bb9d",
+        "Name": "XsdFromXml",
+        "Description": "Derive an Xsd from an Xml file.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCXsdFromXml.exe",
+        "Result": "Results are saved to a file with the same name as input file + .xsd",
+        "RedirectToFileNeeded": "FALSE"
+      },
+      {
+        "CommandLineToolId": "3fe4aec1-199d-4017-817e-cc37b1487916",
+        "Name": "XsltProc",
+        "Description": "Process an Xml file given the specified Xslt file.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCXsltProc.exe",
+        "Result": "Results are written to Console.Write(...)",
+        "RedirectToFileNeeded": "TRUE"
+      },
+      {
+        "CommandLineToolId": "73196e5c-7506-4424-93dc-8f01450fea45",
+        "Name": "FileSetToFiles",
+        "Description": "Extract the files (and their contents) from an Xml File Set.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCFileSetToFiles.exe",
+        "Result": "Results are created as multiple files as specified by the <RelativePath>...</RelativePath> fields of the FileSet.",
+        "RedirectToFileNeeded": "FALSE"
+      },
+      {
+        "CommandLineToolId": "8be12d5d-66cb-4ecf-bd83-8d54ab9ed136",
+        "Name": "MSSQLDbToXml",
+        "Description": "Extract an entire Database into a single XML file.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCMSSQLDbToXml.exe",
+        "Result": "Results are written to Console.Write(...)",
+        "RedirectToFileNeeded": "TRUE"
+      },
+      {
+        "CommandLineToolId": "c7e47013-4710-4b4e-ba55-061d9db3723d",
+        "Name": "HtmlToXml",
+        "Description": "Interpret html (liberally) to create a valid xhtml document.",
+        "Version": "v16.10.02",
+        "Namespace": "CODEiverse.OST.CommandLineTools",
+        "ExeName": "CLBCHtmlToXml.exe",
+        "Result": "Results are written to Console.Write(...)",
+        "RedirectToFileNeeded": "TRUE"
+      }
+    ]
+  }
+}

@@ -35,8 +35,10 @@ namespace CODEiverse.OST.CommandLineTools
             {
                 FileInfo fi = args.GetFirst<FileInfo>();
                 if (!fi.Exists) throw new Exception(String.Format("File {0} does not exist.", fi.FullName));
+
                 doc.Load(fi.FullName);
                 String json = doc.XmlToJson();
+
                 String jsonFileName = String.Format("{0}.json", fi.FullName);
                 File.WriteAllText(jsonFileName, json);
                 Console.WriteLine("File generated.");

@@ -48,7 +48,7 @@ namespace CODEiverse.OST.Lib
 
         public static String XmlToJson(this XmlDocument doc)
         {
-            return JsonConvert.SerializeXmlNode(doc.DocumentElement);
+            return JsonConvert.SerializeXmlNode(doc.DocumentElement, Newtonsoft.Json.Formatting.Indented);
 
         }
 
