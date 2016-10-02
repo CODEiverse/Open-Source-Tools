@@ -70,13 +70,9 @@ namespace CODEiverse.OST.Lib.CmdHelpers
                             {
                                 byte[] data = Convert.FromBase64String(contents);
 
-                                String dir = Path.GetDirectoryName(fileName.InnerText);
-                                if (!String.IsNullOrEmpty(dir))
-                                {
-                                    DirectoryInfo di = new DirectoryInfo(dir);
-                                    if (!di.Exists) di.Create();
-                                }
+                                var fileInfo = new FileInfo(fileName.InnerText);
 
+                                if (!fileInfo.Directory.Exists) fileInfo.Directory.Create();
 
                                 if (!ReferenceEquals(zippedBinaryContentsNode, null))
                                 {
@@ -89,9 +85,7 @@ namespace CODEiverse.OST.Lib.CmdHelpers
                                 else
                                 {
                                     File.WriteAllBytes(fileName.InnerText, data);
-
                                 }
-
                             }
                         }
                         else

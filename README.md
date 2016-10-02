@@ -35,7 +35,7 @@ There are currently 9 tools.  They are.
       Interpret html (liberally) to create a valid xhtml document.
 
 
-The current MSI Installer ([v2016-09-17](https://github.com/CODEiverse/Open-Source-Tools/raw/master/Setup/Debug/CODEiverse_OST_20160917.msi)) can be downloaded to 
+The current MSI Installer ([v2016-09-27](https://github.com/CODEiverse/Open-Source-Tools/raw/master/Setup/Debug/CODEiverse_OST_20160927.msi)) can be downloaded to 
 them to run locally.
 
           

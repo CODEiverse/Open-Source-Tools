@@ -14,6 +14,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using System.IO;
+using System.Xml;
 
 namespace CODEiverse.OST.CommandLineTools
 {
@@ -25,6 +27,12 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
+            if (args.Length == 2) Console.WriteLine("v1.1");
+            FileInfo inputFileInfo = args.GetFirst<FileInfo>();
+            XmlDocument doc = new XmlDocument();
+            doc.Load(inputFileInfo.FullName);
+            String json = doc.XmlToJson();
+            Console.Write(json);
         }
     }
 }

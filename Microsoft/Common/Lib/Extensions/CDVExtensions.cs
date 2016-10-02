@@ -5,6 +5,7 @@ Created By: EJ Alexandra - 2016
 License:    Mozilla Public License 2.0
 *****************************/
 using HtmlAgilityPack;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,6 +13,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace CODEiverse.OST.Lib
 {
@@ -42,6 +44,12 @@ namespace CODEiverse.OST.Lib
             ms.Position = 0;
             var sr = (new StreamReader(ms));
             return sr.ReadToEnd();
+        }
+
+        public static String XmlToJson(this XmlDocument doc)
+        {
+            return JsonConvert.SerializeXmlNode(doc.DocumentElement);
+
         }
 
         private static void CleanSPECDOCLink(this HtmlNode node)
