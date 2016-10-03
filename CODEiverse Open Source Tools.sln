@@ -73,6 +73,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CommandLineTools", "Microso
 		SlnRelativePath = "Microsoft\CommandLineTools\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLBCJsonToJs", "Microsoft\CommandLineTools\CLBCJsonToJs\CLBCJsonToJs.csproj", "{1A13C7EF-2395-496F-9793-A64538C16F0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +133,10 @@ Global
 		{FE844DB7-4FA8-45A7-B3CE-CB39F25C37A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE844DB7-4FA8-45A7-B3CE-CB39F25C37A3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE844DB7-4FA8-45A7-B3CE-CB39F25C37A3}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{1A13C7EF-2395-496F-9793-A64538C16F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A13C7EF-2395-496F-9793-A64538C16F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A13C7EF-2395-496F-9793-A64538C16F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A13C7EF-2395-496F-9793-A64538C16F0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,5 +154,6 @@ Global
 		{8BE12D5D-66CB-4ECF-BD83-8D54AB9ED136} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
 		{C7E47013-4710-4B4E-BA55-061D9DB3723D} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
 		{FE844DB7-4FA8-45A7-B3CE-CB39F25C37A3} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
+		{1A13C7EF-2395-496F-9793-A64538C16F0B} = {64E10561-ED37-4CD7-B1CF-DD836D02AD9D}
 	EndGlobalSection
 EndGlobal

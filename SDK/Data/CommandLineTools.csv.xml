@@ -33,8 +33,19 @@
     <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
+    <CommandLineToolId>1a13c7ef-2395-496f-9793-a64538c16f0b</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>JsonToJs</Name>
+    <Description>Convert a Json file into a JS file.  Adds var filename = + json.</Description>
+    <Version>v16.10.02</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCJsonToJs.exe</ExeName>
+    <Result>Results are saved to a file with the same name as input file + .js</Result>
+    <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
+  </CommandLineTool>
+  <CommandLineTool>
     <CommandLineToolId>84f32c1a-44cb-407b-a50a-87cc9fdfc439</CommandLineToolId>
-    <Implemented>FALSE</Implemented>
+    <Implemented>TRUE</Implemented>
     <Name>JsonToXml</Name>
     <Description>Convert a Json file to an Xml file.</Description>
     <Version>v16.10.02</Version>
