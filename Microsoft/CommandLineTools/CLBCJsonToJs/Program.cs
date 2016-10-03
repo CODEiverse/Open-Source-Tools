@@ -32,7 +32,7 @@ namespace CODEiverse.OST.CommandLineTools
                 FileInfo fi = args.GetFirst<FileInfo>();
                 if (!fi.Exists) throw new Exception(String.Format("File {0} does not exist.", fi.FullName));
                 String jsFileName = String.Format("{0}.js", fi.FullName);
-                String objectName = fi.Name.Substring(0, fi.Name.IndexOf(".") - 1);
+                String objectName = fi.Name.Substring(0, fi.Name.IndexOf("."));
 
                 var json = File.ReadAllText(fi.FullName);
                 String js = String.Format("var {0} = {1}", objectName, json);
