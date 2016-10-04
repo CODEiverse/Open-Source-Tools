@@ -13,6 +13,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Xml;
 
 namespace CODEiverse.OST.Lib
@@ -34,7 +35,8 @@ namespace CODEiverse.OST.Lib
             var anchors = doc.DocumentNode
                             .SelectNodes("//a");
 
-            if (!ReferenceEquals(anchors, null)) { 
+            if (!ReferenceEquals(anchors, null))
+            {
                 anchors.Where(whereNode => !ReferenceEquals(whereNode, null))
                         .ToList()
                         .ForEach(feAnchor => feAnchor.CleanSPECDOCLink());
@@ -54,7 +56,8 @@ namespace CODEiverse.OST.Lib
 
         private static void CleanSPECDOCLink(this HtmlNode node)
         {
-            if (!ReferenceEquals(node.Attributes, null)) {
+            if (!ReferenceEquals(node.Attributes, null))
+            {
                 var href = node.Attributes["href"];
                 if (!ReferenceEquals(href, null))
                 {
@@ -64,15 +67,44 @@ namespace CODEiverse.OST.Lib
                         {
                             href.Value = href.Value.Substring(href.Value.IndexOf("://specdocs/") + "://specdocs/".Length);
                             var entityIndex = href.Value.ToLower().IndexOf("/entity/");
+                            var viewResourceIndex = href.Value.ToLower().IndexOf("/view-resource/");
+                            var simpleLinkIndex = href.Value.ToLower().IndexOf("/link/");
                             if (entityIndex >= 0)
                             {
                                 var entityName = href.Value.Substring(entityIndex + "/entity/".Length);
                                 var candidates = entityName.Split("/&?".ToCharArray());
                                 var finalName = candidates.FirstOrDefault(fodCandidate => !String.IsNullOrEmpty(fodCandidate.SafeToString().Trim()));
 
-                                href.Value = String.Format("DataModel/Entity_{0}.html", finalName);
+                                href.Value = String.Format("$SDK_ROOT_URI$Docs/DataModel/Entity_{0}.html", finalName);
                             }
+                            else if (viewResourceIndex >= 0)
+                            {
+                                var resourceName = href.Value.Substring(viewResourceIndex + "/view-resource/".Length);
+                                var candidates = resourceName.Split("/&?".ToCharArray());
+                                var finalName = candidates.FirstOrDefault(fodCandidate => !String.IsNullOrEmpty(fodCandidate.SafeToString().Trim()));
+
+                                href.Value = String.Format("$SDK_ROOT_URI$Docs/AdditionalResources/Resource_{0}.html", finalName);
+                            }
+                            else if (simpleLinkIndex >= 0)
+                            {
+                                href.Value = href.Value.Substring(viewResourceIndex + "/link/".Length);
+                            }
+                            else
+                            {
+                                href.Value = "ERROR - COULD NOT FIND A MATCHING SPECDOCS// syntax for: '" + href.Value + "'";
+                            }
+
                             if (href.Value.Contains(".html&")) href.Value = href.Value.Substring(0, href.Value.IndexOf(".html&") + ".html".Length);
+                        }
+                        else if (href.Value.StartsWith("https://www.google.com/url?q="))
+                        {
+                            var decodedUrl = HttpUtility.UrlDecode(href.Value.Substring("https://www.google.com/url?q=".Length)) + "&amp;";
+                            href.Value = decodedUrl.Substring(0, decodedUrl.IndexOf("&amp;"));
+                            node.SetAttributeValue("target", "_blank");
+                        } else
+                        {
+                            node.SetAttributeValue("target", "_blank");
+                            object o = 1;
                         }
                     }
                 }
@@ -98,7 +130,8 @@ namespace CODEiverse.OST.Lib
         public static T GetFirst<T>(this String[] args)
             where T : class
         {
-            if (typeof(T) == typeof(FileInfo)) {
+            if (typeof(T) == typeof(FileInfo))
+            {
                 String fileNameString = args.GetFirst<String>();
                 return new FileInfo(fileNameString) as T;
             }
