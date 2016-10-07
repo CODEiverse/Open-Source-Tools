@@ -30,7 +30,12 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
-            if (!args.Any()) Console.Write("Sytnax: CLBCCsvToXml FileName.csv");
+            if (!args.Any())
+            {
+                Console.WriteLine("Sytnax: CLBCCsvToXml FileName.csv");
+                Console.WriteLine("Press any key to continue");
+                Console.ReadKey();
+            }
             else
             {
                 FileInfo fi = new FileInfo(args[0]);
@@ -54,13 +59,43 @@ namespace CODEiverse.OST.CommandLineTools
                     col.DataType = typeof(String);
                 }
                 adapter.Fill(ds);
+
+
                 conn.Close();
 
                 table.TableName = singularFileName;
-                FileStream fs = new FileStream(String.Format("{0}.xml", FileName), FileMode.Create);
+
+                table.Rows
+                    .OfType<DataRow>()
+                    .ToList()
+                    .ForEach(feRow => CleanRow(feRow));
+
+                String xmlFileName = String.Format("{0}.xml", FileName);
+                FileStream fs = new FileStream(xmlFileName, FileMode.Create);
 
                 table.WriteXml(fs);
                 fs.Close();
+                String fileText = File.ReadAllText(xmlFileName);
+                File.WriteAllText(xmlFileName, fileText.Replace("&lt;![CDATA_START[", "<![CDATA[").Replace("]CDATA_END]&gt;", "]]>"));
+            }
+        }
+
+        private static void CleanRow(DataRow feRow)
+        {
+            feRow.Table
+                 .Columns
+                 .OfType<DataColumn>()
+                 .ToList()
+                 .ForEach(feCol => CleanCol(feRow, feCol));
+        }
+
+        private static void CleanCol(DataRow feRow, DataColumn feCol)
+        {
+            var value = feRow[feCol].SafeToString();
+            if (value.Any(anyChar => !Char.IsLetterOrDigit(anyChar) && !" ?~`!@#$%^&*()-_=+[{]}\\|;:',./?".Contains(anyChar)))
+            {
+                feRow[feCol] = String.Format("<![CDATA_START[{0}]CDATA_END]>", value);
+                feRow.AcceptChanges();
             }
         }
     }

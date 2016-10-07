@@ -87,7 +87,7 @@ namespace CODEiverse.OST.Lib
                             }
                             else if (simpleLinkIndex >= 0)
                             {
-                                href.Value = href.Value.Substring(viewResourceIndex + "/link/".Length);
+                                href.Value = HttpUtility.UrlDecode(href.Value.Substring(viewResourceIndex + "/link/".Length));
                             }
                             else
                             {

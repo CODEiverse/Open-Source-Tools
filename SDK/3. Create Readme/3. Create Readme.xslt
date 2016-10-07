@@ -27,7 +27,7 @@ There are currently <xsl:value-of select="count(//CommandLineTool)"/> tools.  Th
 ]]>
 </xsl:for-each>
 
-The current MSI Installer ([v2016-10-02](https://github.com/CODEiverse/Open-Source-Tools/raw/master/Setup/Debug/CODEiverse_OST_20161002.msi)) can be downloaded to 
+The current MSI Installer ([v2016-10-05](https://github.com/CODEiverse/Open-Source-Tools/raw/master/Setup/Debug/CODEiverse_OST_20161005.msi)) can be downloaded to 
 them to run locally.
 
           </FileContents>

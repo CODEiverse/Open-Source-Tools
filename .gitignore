@@ -42,3 +42,9 @@ Microsoft/CommandLineTools/binaries/Debug/CLBCUriToFile.vshost.exe.config
 /Microsoft/CommandLineTools/binaries/Debug/CLBCFileSetToFiles.vshost.exe.manifest
 /Microsoft/CommandLineTools/binaries/Debug/CLBCHtmlToXml.vshost.exe.manifest
 /Microsoft/CommandLineTools/binaries/Debug/CLBCHtmlToXml.vshost.exe.config
+Microsoft/CommandLineTools/binaries/Debug/CommandLineTools.csv
+Microsoft/CommandLineTools/binaries/Debug/CommandLineTools.csv.xml
+Microsoft/CommandLineTools/binaries/Debug/FAQs.csv
+Microsoft/CommandLineTools/binaries/Debug/FAQs.csv.xml
+Microsoft/CommandLineTools/binaries/Debug/LTIv1_2.uri
+Microsoft/CommandLineTools/binaries/LTIv1_2.uri
