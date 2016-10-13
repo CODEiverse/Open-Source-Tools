@@ -25,6 +25,7 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
+            throw new NotImplementedException();
         }
     }
 }

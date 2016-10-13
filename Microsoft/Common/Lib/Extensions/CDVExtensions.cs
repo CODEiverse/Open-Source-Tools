@@ -54,6 +54,20 @@ namespace CODEiverse.OST.Lib
 
         }
 
+        public static XmlDocument JsonToXml(this String json)
+        {
+            try
+            {
+                return JsonConvert.DeserializeXmlNode(json);
+            }
+            catch (JsonSerializationException jse)
+            {
+                json = String.Format("{{ root: {0} }}", json);
+                return JsonConvert.DeserializeXmlNode(json);
+            }
+
+        }
+
         private static void CleanSPECDOCLink(this HtmlNode node)
         {
             if (!ReferenceEquals(node.Attributes, null))
@@ -101,7 +115,8 @@ namespace CODEiverse.OST.Lib
                             var decodedUrl = HttpUtility.UrlDecode(href.Value.Substring("https://www.google.com/url?q=".Length)) + "&amp;";
                             href.Value = decodedUrl.Substring(0, decodedUrl.IndexOf("&amp;"));
                             node.SetAttributeValue("target", "_blank");
-                        } else
+                        }
+                        else
                         {
                             node.SetAttributeValue("target", "_blank");
                             object o = 1;

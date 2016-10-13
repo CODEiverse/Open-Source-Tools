@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using System.IO;
 
 namespace CODEiverse.OST.CommandLineTools
 {
@@ -25,6 +26,19 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
+            if (!args.Any()) Console.Write("Sytnax: CLBCJsonToXml FileName.json");
+            else
+            {
+                FileInfo fi = args.GetFirst<FileInfo>();
+                if (!fi.Exists) throw new Exception(String.Format("File {0} does not exist.", fi.FullName));
+
+                String json = File.ReadAllText(fi.FullName);
+                String xml = json.JsonToXml().OuterXml;
+
+                String xmlFileName = String.Format("{0}.xml", fi.FullName);
+                File.WriteAllText(xmlFileName, xml);
+                Console.WriteLine("Xml File generated.");
+            }
         }
     }
 }
