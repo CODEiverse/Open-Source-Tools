@@ -14,6 +14,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net;
+using System.IO;
+using System.Threading;
 
 namespace CODEiverse.OST.CommandLineTools.CLBCUriToFile
 {
@@ -25,11 +27,34 @@ namespace CODEiverse.OST.CommandLineTools.CLBCUriToFile
     {
         static void Main(string[] args)
         {
-            var uri = args.Get<Uri>();
+            var uri = args.GetFirst<Uri>();
+            var fileName = args.Skip(1)
+                               .ToArray()
+                               .GetFirst<FileInfo>();
+
             if (!ReferenceEquals(uri, null))
             {
                 WebClient wc = new WebClient();
-                Console.WriteLine(wc.DownloadString(uri));
+                wc.Encoding = Encoding.UTF8;
+
+                if (!ReferenceEquals(fileName, null))
+                {
+                    Console.WriteLine("Writing CSV contents to: {0}", fileName.FullName);
+                    var utf8Html = wc.DownloadString(uri);
+                    var utf8Bytes = Encoding.UTF8.GetBytes(utf8Html);
+                    using (var writer = new StreamWriter(fileName.FullName, false, new UTF8Encoding(true)))
+                    {
+                        writer.Write(utf8Html);
+                    }
+                }
+                else
+                {
+                    var utf8Bytes = wc.DownloadData(uri);
+                    Console.OutputEncoding = Encoding.UTF8;
+                    var output = Console.OpenStandardOutput();
+                    output.Write(utf8Bytes, 0, utf8Bytes.Length);
+                    output.Close();
+                }
             }
             else PrintSyntax("Uri");
 

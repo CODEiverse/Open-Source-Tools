@@ -4,7 +4,7 @@
     <Implemented>TRUE</Implemented>
     <Name>UriToFile</Name>
     <Description>Download the specified Uri and output the file.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCUriToFile.exe</ExeName>
     <Result>Results are written to Console.Write(...)</Result>
@@ -15,7 +15,7 @@
     <Implemented>TRUE</Implemented>
     <Name>CsvToXml</Name>
     <Description>Convert a CSV into an Xml file.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCCsvToXml.exe</ExeName>
     <Result>Results are saved to a file with the same name as input file + .xml</Result>
@@ -26,7 +26,7 @@
     <Implemented>TRUE</Implemented>
     <Name>XmlToJson</Name>
     <Description>Convert an Xml file into a Json file.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXmlToJson.exe</ExeName>
     <Result>Results are saved to a file with the same name as input file + .json</Result>
@@ -37,7 +37,7 @@
     <Implemented>TRUE</Implemented>
     <Name>JsonToJs</Name>
     <Description>Convert a Json file into a JS file.  Adds var filename = + json.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCJsonToJs.exe</ExeName>
     <Result>Results are saved to a file with the same name as input file + .js</Result>
@@ -48,7 +48,7 @@
     <Implemented>TRUE</Implemented>
     <Name>JsonToXml</Name>
     <Description>Convert a Json file to an Xml file.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCJsonToXml.exe</ExeName>
     <Result>Results are saved to a file with the same name as input file + .xml</Result>
@@ -59,7 +59,7 @@
     <Implemented>FALSE</Implemented>
     <Name>XsdFromXml</Name>
     <Description>Derive an Xsd from an Xml file.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXsdFromXml.exe</ExeName>
     <Result>Results are saved to a file with the same name as input file + .xsd</Result>
@@ -70,7 +70,7 @@
     <Implemented>FALSE</Implemented>
     <Name>XsltProc</Name>
     <Description>Process an Xml file given the specified Xslt file.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXsltProc.exe</ExeName>
     <Result>Results are written to Console.Write(...)</Result>
@@ -81,7 +81,7 @@
     <Implemented>TRUE</Implemented>
     <Name>FileSetToFiles</Name>
     <Description>Extract the files (and their contents) from an Xml File Set.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCFileSetToFiles.exe</ExeName>
     <Result><![CDATA[Results are created as multiple files as specified by the &lt;RelativePath&gt;...&lt;/RelativePath&gt; fields of the FileSet.]]></Result>
@@ -92,7 +92,7 @@
     <Implemented>FALSE</Implemented>
     <Name>MSSQLDbToXml</Name>
     <Description>Extract an entire Database into a single XML file.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCMSSQLDbToXml.exe</ExeName>
     <Result>Results are written to Console.Write(...)</Result>
@@ -103,7 +103,7 @@
     <Implemented>TRUE</Implemented>
     <Name>HtmlToXml</Name>
     <Description>Interpret html (liberally) to create a valid xhtml document.</Description>
-    <Version>v16.10.10</Version>
+    <Version>v16.10.27</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCHtmlToXml.exe</ExeName>
     <Result>Results are written to Console.Write(...)</Result>

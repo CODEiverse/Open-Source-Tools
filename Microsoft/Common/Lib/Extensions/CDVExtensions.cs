@@ -126,10 +126,16 @@ namespace CODEiverse.OST.Lib
             }
         }
 
-        public static T Get<T>(this string[] args)
+        public static T GetFirst<T>(this string[] args)
             where T : class
         {
-            if (typeof(T) == typeof(Uri))
+            if (typeof(T) == typeof(String))
+            {
+                if (ReferenceEquals(args, null)) return String.Empty as T;
+                else if (!args.Any()) return String.Empty as T;
+                else return args[0] as T;
+            }
+            else if (typeof(T) == typeof(Uri))
             {
                 var uriString = args.GetFirst<String>();
                 if (!String.IsNullOrEmpty(uriString))
@@ -137,31 +143,24 @@ namespace CODEiverse.OST.Lib
                     return new Uri(uriString) as T;
                 }
             }
+            else if (typeof(T) == typeof(FileInfo))
+            {
+                var fileNameString = args.GetFirst<String>();
+                if (!String.IsNullOrEmpty(fileNameString))
+                {
+                    return new FileInfo(fileNameString) as T;
+                }
+            }
+            else
+            {
+                var msg = String.Format("Handler not writtent to handle finding first argument of type '{0}'", typeof(T).Name);
+                throw new NotImplementedException(msg);
+            }
 
             // If we get here - return nothing
             return default(T);
         }
 
-        public static T GetFirst<T>(this String[] args)
-            where T : class
-        {
-            if (typeof(T) == typeof(FileInfo))
-            {
-                String fileNameString = args.GetFirst<String>();
-                return new FileInfo(fileNameString) as T;
-            }
-            else if (typeof(T) == typeof(String))
-            {
-                if (ReferenceEquals(args, null)) return String.Empty as T;
-                else if (!args.Any()) return String.Empty as T;
-                else return args[0] as T;
-            }
-            else
-            {
-                var msg = String.Format("Handler not writtent o handle finding first argument of type '{0}'", typeof(T).Name);
-                throw new NotImplementedException(msg);
-            }
-        }
 
         public static void CopyTo(Stream src, Stream dest)
         {

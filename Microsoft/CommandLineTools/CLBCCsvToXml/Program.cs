@@ -36,13 +36,13 @@ namespace CODEiverse.OST.CommandLineTools
                 Console.WriteLine("Press any key to continue");
                 Console.ReadKey();
             }
-            else
+            else 
             {
                 FileInfo fi = new FileInfo(args[0]);
                 if (!fi.Exists) throw new Exception(String.Format("File {0} does not exist.", fi.FullName));
                 string FileName = fi.FullName;
 
-                OleDbConnection conn = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0; Data Source = " + Path.GetDirectoryName(FileName) + "; Extended Properties = \"Text;HDR=YES;FMT=Delimited\"");
+                OleDbConnection conn = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0; Data Source = " + Path.GetDirectoryName(FileName) + "; Extended Properties = \"Text;HDR=YES;FMT=Delimited;CharacterSet=65001;\"");
 
                 conn.Open();
 
@@ -57,6 +57,8 @@ namespace CODEiverse.OST.CommandLineTools
                 foreach (DataColumn col in table.Columns)
                 {
                     col.DataType = typeof(String);
+                    col.MaxLength = 10000;
+
                 }
                 adapter.Fill(ds);
 
