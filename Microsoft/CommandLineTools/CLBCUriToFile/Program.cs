@@ -27,7 +27,9 @@ namespace CODEiverse.OST.CommandLineTools.CLBCUriToFile
     {
         static void Main(string[] args)
         {
+
             var uri = args.GetFirst<Uri>();
+
             var fileName = args.Skip(1)
                                .ToArray()
                                .GetFirst<FileInfo>();
@@ -41,11 +43,7 @@ namespace CODEiverse.OST.CommandLineTools.CLBCUriToFile
                 {
                     Console.WriteLine("Writing CSV contents to: {0}", fileName.FullName);
                     var utf8Html = wc.DownloadString(uri);
-                    var utf8Bytes = Encoding.UTF8.GetBytes(utf8Html);
-                    using (var writer = new StreamWriter(fileName.FullName, false, new UTF8Encoding(true)))
-                    {
-                        writer.Write(utf8Html);
-                    }
+                    File.WriteAllText(fileName.FullName, utf8Html);
                 }
                 else
                 {
