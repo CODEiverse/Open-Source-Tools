@@ -4,9 +4,10 @@
     <Implemented>TRUE</Implemented>
     <Name>UriToFile</Name>
     <Description>Download the specified Uri and output the file.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCUriToFile.exe</ExeName>
+    <OutputExtension>.html</OutputExtension>
     <Result>Results are written to Console.Write(...)</Result>
     <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -15,9 +16,10 @@
     <Implemented>TRUE</Implemented>
     <Name>CsvToXml</Name>
     <Description>Convert a CSV into an Xml file.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCCsvToXml.exe</ExeName>
+    <OutputExtension>.xml</OutputExtension>
     <Result>Results are saved to a file with the same name as input file + .xml</Result>
     <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -26,9 +28,10 @@
     <Implemented>TRUE</Implemented>
     <Name>XmlToJson</Name>
     <Description>Convert an Xml file into a Json file.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXmlToJson.exe</ExeName>
+    <OutputExtension>.json</OutputExtension>
     <Result>Results are saved to a file with the same name as input file + .json</Result>
     <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -37,9 +40,10 @@
     <Implemented>TRUE</Implemented>
     <Name>JsonToJs</Name>
     <Description>Convert a Json file into a JS file.  Adds var filename = + json.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCJsonToJs.exe</ExeName>
+    <OutputExtension>.js</OutputExtension>
     <Result>Results are saved to a file with the same name as input file + .js</Result>
     <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -48,20 +52,22 @@
     <Implemented>TRUE</Implemented>
     <Name>JsonToXml</Name>
     <Description>Convert a Json file to an Xml file.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCJsonToXml.exe</ExeName>
+    <OutputExtension>.xml</OutputExtension>
     <Result>Results are saved to a file with the same name as input file + .xml</Result>
     <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
   <CommandLineTool>
     <CommandLineToolId>6bdd8f02-ec35-4249-83c6-36996be2bb9d</CommandLineToolId>
-    <Implemented>FALSE</Implemented>
+    <Implemented>TRUE</Implemented>
     <Name>XsdFromXml</Name>
     <Description>Derive an Xsd from an Xml file.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXsdFromXml.exe</ExeName>
+    <OutputExtension>.xsd</OutputExtension>
     <Result>Results are saved to a file with the same name as input file + .xsd</Result>
     <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -70,9 +76,10 @@
     <Implemented>FALSE</Implemented>
     <Name>XsltProc</Name>
     <Description>Process an Xml file given the specified Xslt file.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCXsltProc.exe</ExeName>
+    <OutputExtension>._raw</OutputExtension>
     <Result>Results are written to Console.Write(...)</Result>
     <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -81,9 +88,10 @@
     <Implemented>TRUE</Implemented>
     <Name>FileSetToFiles</Name>
     <Description>Extract the files (and their contents) from an Xml File Set.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCFileSetToFiles.exe</ExeName>
+    <OutputExtension>._multiple</OutputExtension>
     <Result><![CDATA[Results are created as multiple files as specified by the &lt;RelativePath&gt;...&lt;/RelativePath&gt; fields of the FileSet.]]></Result>
     <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -92,9 +100,10 @@
     <Implemented>FALSE</Implemented>
     <Name>MSSQLDbToXml</Name>
     <Description>Extract an entire Database into a single XML file.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCMSSQLDbToXml.exe</ExeName>
+    <OutputExtension>.xml</OutputExtension>
     <Result>Results are written to Console.Write(...)</Result>
     <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
   </CommandLineTool>
@@ -103,10 +112,133 @@
     <Implemented>TRUE</Implemented>
     <Name>HtmlToXml</Name>
     <Description>Interpret html (liberally) to create a valid xhtml document.</Description>
-    <Version>v16.10.27</Version>
+    <Version>v16.11.30</Version>
     <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
     <ExeName>CLBCHtmlToXml.exe</ExeName>
+    <OutputExtension>.xml</OutputExtension>
     <Result>Results are written to Console.Write(...)</Result>
     <RedirectToFileNeeded>TRUE</RedirectToFileNeeded>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>7eeec9e7-654f-461c-b520-d4f5c259c8b1</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>XsdToOdxml</Name>
+    <Description>Convert an XSD into an ODXML file, which powers the ODXML4 stack.</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCXsdToOdxml.exe</ExeName>
+    <OutputExtension>.odxml</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .odxml</Result>
+    <RedirectToFileNeeded>FALSE</RedirectToFileNeeded>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>8b37766d-1804-4f14-8061-1206d44f58f6</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>OdxmlToSqlSchema</Name>
+    <Description>Converts an Odxml object model into a SQL script which will create that database structure</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCOdxmlToSqlSchema.exe</ExeName>
+    <OutputExtension>.sql</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .sql</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>a38b6e11-6b93-4e25-b668-b09cc369491f</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>OdxmlToUpdateSqlSchema</Name>
+    <Description>Convers an Odxml object model into a SQL script which will 'fill in the gaps' in a sql data model - if it already exists for the most part.  Tables will not be added.</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCOdxmlToUpdateSqlSchema.exe</ExeName>
+    <OutputExtension>.sql</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .sql</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>e6d39f19-741e-4fa6-abab-07d29c95ae03</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>StaticDataToUpdateInsertSqlData</Name>
+    <Description>Moves static data (from a spec doc set) into a sql data base created to match the structure</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCStaticDataToUpdateInsertSqlData.exe</ExeName>
+    <OutputExtension>.sql</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .sql</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>c0d05136-ac25-4c13-ab6e-756eb5fed9d7</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>GetSqlSchema</Name>
+    <Description>Connect to a SQL Server and extract the database objects as one, large xml document.</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCGetSqlSchema.exe</ExeName>
+    <OutputExtension>.xml</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .xml</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>e1b03a40-390c-4bf9-ab84-47742d6dd93a</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>SqlSchemaToOdxml</Name>
+    <Description>Convert the Xml produced by the GetSqlSchema tool, into an Odxml object model.</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCSqlSchemaToOdxml.exe</ExeName>
+    <OutputExtension>.odxml</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .odxml</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>6a159d08-daee-472d-a819-665bdb251801</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>MultiLinqualObjectListToResx</Name>
+    <Description>Convert a list of objects (with multiple languages for DisplayName + Description, to create multiple language files (resx and cs)</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCMultiLinqualObjectListToResx.exe</ExeName>
+    <OutputExtension>._multiple</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + ._multiple</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>0e2672f8-b00e-4567-8193-ba46325a2cd0</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>MultiLinqualPropertyListToResx</Name>
+    <Description>Convert a list of object properties / attributes (with multiple languages for DisplayName + Description, to create multiple language files (resx and cs)</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCMultiLinqualPropertyListToResx.exe</ExeName>
+    <OutputExtension>._multiple</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + ._multiple</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>26b8112e-25c6-4eb0-a77a-e5275429b28f</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>MultiLinqualTokenListToResx</Name>
+    <Description>Convert a list of tokens (with multiple languages for DisplayName + Description, to create multiple language files (resx and cs)</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCMultiLinqualTokenListToResx.exe</ExeName>
+    <OutputExtension>._multiple</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + ._multiple</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>6d7f0a85-1015-46bc-9b78-15065431568d</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>OdxmlToOdxmlSubset</Name>
+    <Description>Trim down an Odxml Data model to a much smaller list of objects and/or properties.</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCOdxmlToOdxmlSubset.exe</ExeName>
+    <OutputExtension>.odxml</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .odxml</Result>
+  </CommandLineTool>
+  <CommandLineTool>
+    <CommandLineToolId>320c899c-3307-48a7-b51e-8c99c6b8c29f</CommandLineToolId>
+    <Implemented>TRUE</Implemented>
+    <Name>OdxmlCleanup</Name>
+    <Description>Applys a mapping from one odxml model to another</Description>
+    <Version>v16.11.30</Version>
+    <Namespace>CODEiverse.OST.CommandLineTools</Namespace>
+    <ExeName>CLBCOdxmlCleanup.exe</ExeName>
+    <OutputExtension>.odxml</OutputExtension>
+    <Result>Results are saved to a file with the same name as input file + .odxml</Result>
   </CommandLineTool>
 </CommandLineTools>

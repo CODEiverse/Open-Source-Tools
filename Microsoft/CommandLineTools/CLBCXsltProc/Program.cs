@@ -25,7 +25,8 @@ namespace CODEiverse.OST.CommandLineTools
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("CLBC Xslt Processor...");
+            // Process an Xslt command
+
         }
     }
 }

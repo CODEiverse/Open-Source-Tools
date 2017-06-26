@@ -28,18 +28,17 @@ namespace CODEiverse.OST.CommandLineTools
         static void Main(string[] args)
         {
             //Thread.Sleep(15000);
-            String fileName = args.GetFirst<String>();
-            FileInfo fi = new FileInfo(fileName);
+            FileInfo fi = args.GetFirst<FileInfo>();
             String fileSetXml = String.Empty;
             String directory = Environment.CurrentDirectory;
-            if (String.IsNullOrEmpty(fileName)) PrintSyntax("FileSet.xml");
+            if (fi.Exists) PrintSyntax("FileSet.xml");
             else
             {
                 directory = fi.Directory.FullName;
-                fileSetXml = File.ReadAllText(fileName);
+                fileSetXml = File.ReadAllText(fi.FullName);
             }
 
-            SplitContents(fileSetXml, false, directory);
+            fileSetXml.SplitFileSetXml(false, directory);
         }
     }
 }
